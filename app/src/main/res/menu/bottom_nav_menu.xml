@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/services_fragment"
+        android:icon="@drawable/ic_services"
+        android:title="Services" />
+
+    <item
+        android:id="@+id/bot_fragment"
+        android:icon="@drawable/ic_bot"
+        android:title="Bot" />
+
+    <item
+        android:id="@+id/chair_fragment"
+        android:icon="@drawable/ic_chair"
+        android:title="Chair" />
+    <item
+        android:id="@+id/friend_fragment"
+        android:icon="@drawable/ic_friend"
+        android:title="New friend" />
+
+    <item
+        android:id="@+id/profile_fragment"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile" />
+
+</menu>
