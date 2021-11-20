@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/drawable/data.xml" value="0.1125" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/drawable/help.xml" value="0.1125" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.1125" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1125" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/drawable/top.xml" value="0.1125" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/layout/activity_main.xml" value="0.12771739130434784" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
