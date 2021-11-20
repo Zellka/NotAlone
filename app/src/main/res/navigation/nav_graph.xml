@@ -17,7 +17,7 @@
         tools:layout="@layout/fragment_chair" />
     <fragment
         android:id="@+id/friend_fragment"
-        android:name="com.example.notalone.FriendFragment"
+        android:name="com.example.notalone.friends.FriendFragment"
         android:label="fragment_friend"
         tools:layout="@layout/fragment_friend" />
     <fragment

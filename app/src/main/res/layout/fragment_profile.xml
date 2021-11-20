@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/purple_700"
         android:orientation="vertical">
 
@@ -17,14 +17,6 @@
             android:layout_marginTop="@dimen/space_5"
             android:background="@drawable/top"
             android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_gravity="end"
-                android:layout_marginHorizontal="@dimen/space_4"
-                android:layout_marginTop="8dp"
-                android:src="@drawable/ic_baseline_settings_24" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -40,6 +32,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+
                     android:layout_marginHorizontal="16dp"
                     android:layout_weight="1"
                     android:orientation="vertical">
@@ -116,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_marginHorizontal="16dp"
-                android:layout_marginBottom="32dp"
+                android:layout_marginBottom="70dp"
                 android:text="You joined NotAlone in October 2021. Since then, 1 month has passed, and our mission is still the same - to help you in the selection of interesting and useful services and new acquaintances" />
         </LinearLayout>
     </LinearLayout>
