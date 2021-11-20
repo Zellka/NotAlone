@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FriendFragment">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginBottom="32dp"
+    tools:context=".friends.FriendFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_friends_art"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_4"
+        android:text="Do you want to find new friends?"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_6"
+        android:textStyle="bold" />
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="We will select a new interlocutor for you every day according to your interests. But the dialog will be available only for one day, have time to exchange contacts to continue communication"
+        />
 
-</FrameLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="@color/white"
+        android:background="@color/purple_700"
+        android:text="Let’s Get Started ->"/>
+
+
+</LinearLayout>

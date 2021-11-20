@@ -13,6 +13,9 @@
             android:name=".test.TestActivity"
             android:windowSoftInputMode="adjustResize"
             android:exported="true" />
+              <activity
+            android:name=".friends.DialogActivity"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />
