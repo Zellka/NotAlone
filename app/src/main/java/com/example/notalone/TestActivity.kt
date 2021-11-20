@@ -1,44 +1,40 @@
 package com.example.notalone
 
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.notalone.databinding.FragmentBotBinding
+import com.example.notalone.databinding.ActivityTestBinding
 import kotlinx.coroutines.*
 
-class BotFragment : Fragment() {
+class TestActivity : AppCompatActivity() {
 
-    private lateinit var binding: FragmentBotBinding
+    private lateinit var binding: ActivityTestBinding
     private var messagesList = mutableListOf<Message>()
 
     private lateinit var adapter: MessageAdapter
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        binding = FragmentBotBinding.inflate(inflater, container, false)
-        return binding.root
-    }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityTestBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
         adapter = MessageAdapter()
         binding.bot.rvMessages.adapter = adapter
-        binding.bot.rvMessages.layoutManager = LinearLayoutManager(this.requireContext())
+        binding.bot.rvMessages.layoutManager = LinearLayoutManager(this)
 
         binding.bot.btnSend.setOnClickListener {
             val message = binding.bot.enterMessage.text.toString()
 
             if (message.isNotEmpty()) {
-                messagesList.add(Message(message, BotFragment.SEND_ID))
+                if (message.toLowerCase() == "exit") {
+                    startActivity(Intent(this, MainActivity::class.java))
+                    finish()
+                }
+                messagesList.add(Message(message, Companion.SEND_ID))
                 binding.bot.enterMessage.setText("")
 
-                adapter.insertMessage(Message(message, BotFragment.SEND_ID))
+                adapter.insertMessage(Message(message, Companion.SEND_ID))
                 binding.bot.rvMessages.scrollToPosition(adapter.itemCount - 1)
 
                 botResponse(message)
@@ -52,7 +48,7 @@ class BotFragment : Fragment() {
                 }
             }
         }
-        customBotMessage(getString(R.string.first_mes_bot))
+        customBotMessage(getString(R.string.test_mes_bot))
     }
 
     private fun botResponse(message: String) {
@@ -60,8 +56,8 @@ class BotFragment : Fragment() {
             delay(2000)
             withContext(Dispatchers.Main) {
                 val response = BotResponse.getBasicResponses(message)
-                messagesList.add(Message(response, RECEIVE_ID))
-                adapter.insertMessage(Message(response, RECEIVE_ID))
+                messagesList.add(Message(response, Companion.RECEIVE_ID))
+                adapter.insertMessage(Message(response, Companion.RECEIVE_ID))
                 binding.bot.rvMessages.scrollToPosition(adapter.itemCount - 1)
             }
         }
@@ -81,8 +77,8 @@ class BotFragment : Fragment() {
         GlobalScope.launch {
             delay(100)
             withContext(Dispatchers.Main) {
-                messagesList.add(Message(message, RECEIVE_ID))
-                adapter.insertMessage(Message(message, RECEIVE_ID))
+                messagesList.add(Message(message, Companion.RECEIVE_ID))
+                adapter.insertMessage(Message(message, Companion.RECEIVE_ID))
 
                 binding.bot.rvMessages.scrollToPosition(adapter.itemCount - 1)
             }
