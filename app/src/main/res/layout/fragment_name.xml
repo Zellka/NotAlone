@@ -80,6 +80,37 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:weightSum="2"
+            app:layout_constraintTop_toBottomOf="@+id/input_birth"
+            tools:ignore="MissingConstraints">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:buttonTint="@color/purple_700"
+                android:text="@string/female"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:buttonTint="@color/purple_700"
+                android:text="@string/male"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+        </RadioGroup>
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_next"
             android:layout_width="match_parent"
