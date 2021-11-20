@@ -1,14 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileFragment">
+    android:background="@color/purple_700"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@color/purple_700"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/space_5"
+            android:background="@drawable/top"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="end"
+                android:layout_marginHorizontal="@dimen/space_4"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_baseline_settings_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_4"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ava" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Stan Smith"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_4"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/data"
+                        android:gravity="center"
+                        android:padding="@dimen/space_1"
+                        android:text="1999 May 12 "
+                        android:textColor="@color/purple_700" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="Edit Profile"
+                    android:textColor="@color/purple_700" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space_4"
+                android:text="Nearest services"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_4"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_margin="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/map" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/help"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Do you have any questions for NotAlone?Please write!We will be happy to help you."
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="32dp"
+                android:text="You joined NotAlone in October 2021. Since then, 1 month has passed, and our mission is still the same - to help you in the selection of interesting and useful services and new acquaintances" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

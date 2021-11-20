@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_1">5dp</dimen>
+    <dimen name="space_2">10dp</dimen>
+    <dimen name="space_3">15dp</dimen>
+    <dimen name="space_4">20dp</dimen>
+    <dimen name="space_5">25dp</dimen>
+    <dimen name="space_6">30dp</dimen>
+
+    <dimen name="text_size_3">15sp</dimen>
+    <dimen name="text_size_4">20sp</dimen>
+    <dimen name="text_size_5">25sp</dimen>
+    <dimen name="text_size_6">30sp</dimen>
+
+    <dimen name="sirius_badge_radius">5dp</dimen>
+    <dimen name="sirius_badge_diameter">10dp</dimen>
+    <dimen name="li_operation_avatar_view_size">40dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+</resources>
