@@ -10,10 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NotAlone">
         <activity
+            android:name=".test.TestActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true" />
+              <activity
             android:name=".friends.DialogActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.NotAlone.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,9 +29,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".TestActivity"
-            android:exported="true" />
     </application>
 
 </manifest>

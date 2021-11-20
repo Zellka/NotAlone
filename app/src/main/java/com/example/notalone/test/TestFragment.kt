@@ -1,4 +1,4 @@
-package com.example.notalone
+package com.example.notalone.test
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,24 +7,27 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.notalone.MainActivity
+import com.example.notalone.R
+import com.example.notalone.common.Test
 import com.example.notalone.adapter.MessageAdapter
-import com.example.notalone.common.BotResponse
-import com.example.notalone.databinding.FragmentBotBinding
+import com.example.notalone.databinding.FragmentTestBinding
 import com.example.notalone.entity.Message
 import kotlinx.coroutines.*
 
-class BotFragment : Fragment() {
+class TestFragment : Fragment() {
 
-    private lateinit var binding: FragmentBotBinding
+    private lateinit var binding: FragmentTestBinding
+
     private var messagesList = mutableListOf<Message>()
-
     private lateinit var adapter: MessageAdapter
+    private var pos = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentBotBinding.inflate(inflater, container, false)
+        binding = FragmentTestBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -34,39 +37,45 @@ class BotFragment : Fragment() {
         binding.rvMessages.adapter = adapter
         binding.rvMessages.layoutManager = LinearLayoutManager(this.requireContext())
 
-        binding.btnSend.setOnClickListener {
-            val message = binding.enterMessage.text.toString()
-
+        binding.btnYes.setOnClickListener {
+            val message = binding.btnYes.text.toString()
             if (message.isNotEmpty()) {
-                if (message.toLowerCase() == "exit") {
+                if (pos > 8) {
                     startActivity(Intent(this.requireContext(), MainActivity::class.java))
-                    activity?.finish()
                 }
                 messagesList.add(Message(message, SEND_ID))
-                binding.enterMessage.setText("")
 
                 adapter.insertMessage(Message(message, SEND_ID))
                 binding.rvMessages.scrollToPosition(adapter.itemCount - 1)
 
-                botResponse(message)
+                botResponse(message, pos)
+                pos++
             }
         }
-        binding.enterMessage.setOnClickListener {
-            GlobalScope.launch {
-                delay(100)
-                withContext(Dispatchers.Main) {
-                    binding.rvMessages.scrollToPosition(adapter.itemCount - 1)
-                }
+        binding.btnNo.setOnClickListener {
+            val message = binding.btnNo.text.toString()
+            if (pos > 8) {
+                startActivity(Intent(this.requireContext(), MainActivity::class.java))
+            }
+            if (message.isNotEmpty()) {
+                messagesList.add(Message(message, SEND_ID))
+
+                adapter.insertMessage(Message(message, SEND_ID))
+                binding.rvMessages.scrollToPosition(adapter.itemCount - 1)
+
+                botResponse(message, pos)
+                pos++
             }
         }
-        customBotMessage(getString(R.string.first_mes_bot))
+
+        customBotMessage(getString(R.string.test_mes_bot))
     }
 
-    private fun botResponse(message: String) {
+    private fun botResponse(message: String, position: Int) {
         GlobalScope.launch {
-            delay(2000)
+            delay(500)
             withContext(Dispatchers.Main) {
-                val response = BotResponse.getBasicResponses(message)
+                val response = Test.getTestAnswer(message, position)
                 messagesList.add(Message(response, RECEIVE_ID))
                 adapter.insertMessage(Message(response, RECEIVE_ID))
                 binding.rvMessages.scrollToPosition(adapter.itemCount - 1)
