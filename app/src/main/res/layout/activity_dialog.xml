@@ -26,8 +26,6 @@
             android:layout_gravity="end"
             android:src="@drawable/ic_baseline_dehaze_24"/>
     </LinearLayout>
-    <include
-        android:id="@+id/dialog"
-        layout="@layout/bot_layout"/>
+
 
 </LinearLayout>
