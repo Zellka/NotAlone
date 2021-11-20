@@ -1,10 +1,11 @@
-package com.example.notalone
+package com.example.notalone.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.notalone.entity.Message
 import com.example.notalone.databinding.ItemMessageBinding
 
 class MessageAdapter : RecyclerView.Adapter<MessageAdapter.MessageViewHolder>() {
@@ -15,14 +16,14 @@ class MessageAdapter : RecyclerView.Adapter<MessageAdapter.MessageViewHolder>() 
         RecyclerView.ViewHolder(binding.root) {
         fun bind(currentMessage: Message) {
             when (currentMessage.id) {
-                Companion.SEND_ID -> {
+                SEND_ID -> {
                     binding.yourMessage.apply {
                         text = currentMessage.message
                         visibility = View.VISIBLE
                     }
                     binding.botMessage.visibility = View.GONE
                 }
-                Companion.RECEIVE_ID -> {
+                RECEIVE_ID -> {
                     binding.botMessage.apply {
                         text = currentMessage.message
                         visibility = View.VISIBLE

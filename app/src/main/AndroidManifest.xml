@@ -10,10 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NotAlone">
         <activity
+            android:name=".test.TestActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity
-            android:name=".TestActivity"
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.NotAlone.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
