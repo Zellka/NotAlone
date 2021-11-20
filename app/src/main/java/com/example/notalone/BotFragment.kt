@@ -38,10 +38,6 @@ class BotFragment : Fragment() {
             val message = binding.enterMessage.text.toString()
 
             if (message.isNotEmpty()) {
-                if (message.toLowerCase() == "exit") {
-                    startActivity(Intent(this.requireContext(), MainActivity::class.java))
-                    activity?.finish()
-                }
                 messagesList.add(Message(message, SEND_ID))
                 binding.enterMessage.setText("")
 

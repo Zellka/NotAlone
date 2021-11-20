@@ -3,6 +3,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hint_enter_message">Enter message</string>
     <string name="first_mes_bot">How are you 👂?</string>
+    <string name="first_mes_for_you">Hey 🖐! What is your name?</string>
     <string name="test_mes_bot">Hi! We want to offer services for you personally. To do this, take the test. Answer yes or no. Ok?</string>
     <string name="app_description">An application that will save you from loneliness</string>
     <string name="hint_name">Name</string>
@@ -11,4 +12,6 @@
     <string name="btn_no">No</string>
     <string name="btn_next">Next</string>
     <string name="btn_start">Start</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
 </resources>
