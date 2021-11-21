@@ -12,21 +12,21 @@ import com.example.notalone.entity.Services
 
 
 class ServicesAdapter(var items: List<Services>, private val listener: ClickListener) :
-    RecyclerView.Adapter<ServicesAdapter.BookHolder>() {
+    RecyclerView.Adapter<ServicesAdapter.ServicesHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
-        BookHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_services, parent, false))
+        ServicesHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_services, parent, false))
 
     override fun getItemCount() = items.size
 
-    override fun onBindViewHolder(holder: BookHolder, position: Int) {
+    override fun onBindViewHolder(holder: ServicesHolder, position: Int) {
         holder.bind(items[position])
         holder.itemView.setOnClickListener {
             listener.showServices(items[position])
         }
     }
 
-    inner class BookHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class ServicesHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val fon = itemView.findViewById<LinearLayout>(R.id.item_fon_fon)
         private val image = itemView.findViewById<ImageView>(R.id.item_fon_image)
         private val text = itemView.findViewById<TextView>(R.id.item_fon_text)
@@ -40,5 +40,5 @@ class ServicesAdapter(var items: List<Services>, private val listener: ClickList
 }
 
 interface ClickListener {
-    fun showServices(book: Services)
+    fun showServices(services: Services)
 }

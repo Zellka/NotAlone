@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/item_fon_fon"
     android:layout_width="150dp"
     android:layout_height="200dp"
@@ -10,7 +11,7 @@
     <ImageView
         android:id="@+id/item_fon_image"
         android:layout_width="150dp"
-        android:src="@drawable/ic_friends_art"
+        tools:src="@drawable/ic_friends_art"
         android:layout_height="150dp" />
 
     <TextView
@@ -18,6 +19,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="Lhepmz"
+        tools:text="text"
         android:gravity="center" />
 </LinearLayout>

@@ -40,7 +40,7 @@ class ServicesFragment : Fragment(), ClickListener {
         binding.recycler.adapter = ServicesAdapter(services, this)
     }
 
-    override fun showServices(book: Services) {
+    override fun showServices(services: Services) {
         startActivity(Intent(this.requireContext(), ServicesActivity::class.java))
     }
 }
