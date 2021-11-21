@@ -1,12 +1,12 @@
-package com.example.notalone
+package com.example.notalone.bot
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.notalone.R
 import com.example.notalone.adapter.MessageAdapter
 import com.example.notalone.common.BotResponse
 import com.example.notalone.databinding.FragmentBotBinding

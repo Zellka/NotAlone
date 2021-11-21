@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NotAlone">
         <activity
+            android:name=".profile.QuestionActivity"
+            android:exported="true" />
+        <activity
             android:name=".services.PostActivity"
             android:exported="true" />
         <activity

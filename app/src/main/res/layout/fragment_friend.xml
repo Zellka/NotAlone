@@ -31,14 +31,17 @@
         android:text="We will select a new interlocutor for you every day according to your interests. But the dialog will be available only for one day, have time to exchange contacts to continue communication"
         />
 
+
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_open_chat"
+        android:id="@+id/btnOpenChat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_back"
+        android:text="Let’s Get Started"
         android:textColor="@color/white"
-        android:background="@color/purple_700"
-        android:text="Let’s Get Started ->"/>
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
 
 </LinearLayout>

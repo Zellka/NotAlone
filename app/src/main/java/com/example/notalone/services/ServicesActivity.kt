@@ -27,7 +27,7 @@ class ServicesActivity : AppCompatActivity() , ClickListener2 {
 
         val providers = listOf<Provider>(
             Provider("Dog grooming", "Designer haircut of dogs of all breeds. We do our best for you and will be glad to see you and your pets. We do not work on weekends","Mannerheimintie 20","10-100"),
-            Provider("Cat Cafe", "Do you want to have a delicious snack in a nice place in the company of our furry cats ? We welcome everyone !","Aleksanterinkatu 52","from 5"),
+            Provider("Cat Cafe", "Do you want to have a delicious snack in a nice place in the company of our furry cats ? We welcome everyone!","Aleksanterinkatu 52","from 5"),
             Provider("Pet Store", "A small pet store that works to bring you and your pets great happiness!","Mannerheimintie 20","different"),
             Provider("Exhibition of parrots", "A unique exhibition of parrots collected from all over the world! Come to see colorful birds and improve your mood","Mannerheimintie 20","10"),
         )

@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/bot_fragment"
-        android:name="com.example.notalone.BotFragment"
+        android:name="com.example.notalone.bot.BotFragment"
         android:label="fragment_bot"
         tools:layout="@layout/fragment_bot" />
     <fragment
         android:id="@+id/chair_fragment"
-        android:name="com.example.notalone.ChairFragment"
+        android:name="com.example.notalone.chair.ChairFragment"
         android:label="fragment_chair"
         tools:layout="@layout/fragment_chair" />
     <fragment
@@ -22,7 +22,7 @@
         tools:layout="@layout/fragment_friend" />
     <fragment
         android:id="@+id/profile_fragment"
-        android:name="com.example.notalone.ProfileFragment"
+        android:name="com.example.notalone.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
