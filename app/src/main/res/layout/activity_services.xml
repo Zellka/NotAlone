@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".services.ServicesActivity">
+
+    <Toolbar
+        android:id="@+id/tol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        android:title="Pets" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:itemCount="4"
+        android:layout_marginHorizontal="8dp"
+        tools:listitem="@layout/item_provider" />
+</LinearLayout>

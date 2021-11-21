@@ -7,15 +7,22 @@
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/drawable/help.xml" value="0.1125" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1125" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.1125" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/drawable/ic_baseline_attach_money_24.xml" value="0.1125" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/drawable/ic_baseline_dehaze_24.xml" value="0.1125" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1125" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1125" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/drawable/top.xml" value="0.1125" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/layout/activity_dialog.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/layout/activity_main.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/layout/activity_post.xml" value="0.1" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/layout/activity_services.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/layout/bot_layout.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/layout/fragment_friend.xml" value="0.18" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/layout/fragment_friend_dialog.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/layout/fragment_profile.xml" value="0.12" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/layout/fragment_services.xml" value="0.15" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/layout/item_provider.xml" value="0.12" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/layout/item_services.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NotAlone/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
       </map>
     </option>

@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ServicesFragment">
+    android:orientation="vertical"
+    android:layout_marginBottom="34dp"
+    android:background="@drawable/fon"
+    tools:context=".services.ServicesFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_4"
+        android:text="What brought you to NotAlone?"
+        android:textColor="@color/black"
 
-    <!-- TODO: Update blank fragment layout -->
+        android:textSize="@dimen/text_size_6"
+        android:textStyle="bold" />
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="choose a topic that is interesting"
+     />
 
-</FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="match_parent"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_services" />
+</LinearLayout>

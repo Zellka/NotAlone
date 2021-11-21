@@ -27,7 +27,7 @@
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/services_fragment"
-        android:name="com.example.notalone.ServicesFragment"
+        android:name="com.example.notalone.services.ServicesFragment"
         android:label="fragment_services"
         tools:layout="@layout/fragment_services" />
 </navigation>
